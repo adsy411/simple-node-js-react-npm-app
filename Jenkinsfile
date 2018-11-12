@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'akp update'
+                sh 'apk update'
                 sh 'npm install'
             }
         }
