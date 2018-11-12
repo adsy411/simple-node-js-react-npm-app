@@ -11,8 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'chown $USER /usr/local'
-                sh 'npm update npm -g'
+                sh 'npm install'
             }
         }
         stage('Test') {
